@@ -3,9 +3,6 @@ import { nanoid } from 'nanoid';
 import { Form, Label, Input } from './ContactForm.styled';
 import PropTypes from 'prop-types';
 
-// import { Formik, Form, Field, ErrorMessage } from 'formik';
-// import * as yup from 'yup';
-
 class ContactForm extends Component {
   state = {
     id: '',
@@ -36,7 +33,6 @@ class ContactForm extends Component {
 
   render() {
     return (
-      // <Formik initialValues={this.state} onSubmit={this.handleSubmit}>
       <Form onSubmit={this.handleSubmit}>
         <Label>
           Name
@@ -49,7 +45,6 @@ class ContactForm extends Component {
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             required
           />
-          {/* <ErrorMessage name="name" /> */}
         </Label>
         <Label>
           Number
